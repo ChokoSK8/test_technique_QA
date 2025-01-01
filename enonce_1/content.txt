@@ -1,0 +1,17 @@
+Test Technique Responsable Q/A
+
+
+    Énoncé 1
+
+            1. Les soucis de ce repository et leurs solutions :
+                - le dossier 'venv' a été push --> il faut enregistrer les dépendances/librairies du projet dans un fichier 'requirements.txt' et push celui-ci au lieu du dossier 'venv' ;
+                - le fichier '.env' a été push, cela peut exposer des données sensibles --> il faut spécifier à GitHub d'ignorer ce fichier lors du push avec le fichier '.gitignore' ;
+                - le fichier '.DS_STORE' a été push alors qu'il s'agit d'aide pour les machines Mac --> il faut spécifier à GitHub d'ignorer ce fichier lors du push avec le fichier '.gitignore' ;
+                - le fichier '.gitignore' n'est pas assez rempli ;
+                - le code du fichier 'app.py' est mal organisé :
+                    --> les variables d'environnement devrait être déclarées entre les lignes 'load_dotenv()' et 'def fetch_ip_address()' ou alors importées depuis un autre fichier ;
+                    --> le point d'entrée du programme n'est pas spécifié : 'if __name__ == "__main__":' ;
+                    --> il y a un mélange de syntaxe : camelCase et snake_case ;
+                    --> la variable 'data' ne donne pas assez de contexte sur son contenu.
+
+            2. La tâche a priorisée est la suppression du fichier '.env' du repository.
